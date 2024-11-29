@@ -7,6 +7,7 @@ use App\Filament\Resources\NewsResource\RelationManagers;
 use App\Models\News;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
@@ -25,6 +26,8 @@ class NewsResource extends Resource
     protected static ?string $model = News::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+    protected static ?string $label = 'Berita';
 
     public static function form(Form $form): Form
     {
@@ -59,7 +62,7 @@ class NewsResource extends Resource
                     ])
                     ->required(),
 
-                SpatieMediaLibraryFileUpload::make('image')
+                FileUpload::make('image')
                     ->label('Gambar Utama')
                     ->image()
                     ->imageEditor()
