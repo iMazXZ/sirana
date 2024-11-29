@@ -10,9 +10,8 @@ render(function (View $view) {
 ?>
 
 <x-layouts.app>
-    <h1>Sirana</h1>
-    <h2>Berita</h2>
+    Berita
     @foreach($news as $berita)
-        <a href="{{ route('news.show', ['news' => $berita]) }}">{{ $berita->title }}</a>
+        {{ $berita->title }}
     @endforeach
 </x-layouts.app>
