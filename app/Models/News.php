@@ -22,6 +22,10 @@ class News extends Model implements HasMedia
         'slug',
     ];
 
+    protected $casts = [
+        'published_at' => 'datetime',
+    ];
+
     public function newsCategory(): BelongsTo
     {
         return $this->belongsTo(NewsCategory::class, 'category_id');

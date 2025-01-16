@@ -17,11 +17,15 @@ class Activity extends Model
         'slug',
     ];
 
-    // Event untuk otomatis membuat slug saat kegiatan dibuat atau diperbarui
+    protected $casts = [
+        'start_date' => 'datetime',
+        'end_date' => 'datetime',
+    ];
+
     protected static function booted()
     {
         static::creating(function ($activity) {
-            $activity->slug = Str::slug($activity->title); // Membuat slug otomatis berdasarkan judul
+            $activity->slug = Str::slug($activity->title);
         });
     }
 }
