@@ -9,3 +9,5 @@ Route::get('/struktur', function () {
 Route::get('/', function () {
     return view('pages.index');
 });
+
+Route::post('/comments', [App\Http\Controllers\CommentController::class, 'store'])->name('comments.store');
