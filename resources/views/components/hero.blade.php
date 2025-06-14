@@ -9,7 +9,7 @@
             </a>
         </div>
         <div class="w-full md:w-1/2 hidden md:block">
-            <img src="https://i.ibb.co.com/8skkfLp/Hero-Section.png" alt="Logo Sirana" class="w-full h-auto rounded-lg">
+            <img src="/img/Hero-Section.png" alt="Logo Sirana" class="w-full h-auto rounded-lg">
             {{-- <img src="https://i.ibb.co.com/D5dBSHm/20241210-140337.png" alt="Logo Sirana" class="w-full h-auto rounded-lg"> --}}
         </div>
     </div>
