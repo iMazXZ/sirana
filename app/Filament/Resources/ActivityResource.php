@@ -37,6 +37,7 @@ class ActivityResource extends Resource
 
                 Textarea::make('description')
                     ->label('Deskripsi Kegiatan')
+                    ->maxLength(1000)
                     ->required(),
 
                 DateTimePicker::make('start_date')
