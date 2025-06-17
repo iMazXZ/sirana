@@ -10,7 +10,7 @@
                                 <i class="fas fa-user-circle mr-2 text-blue-500"></i> {{ $member->name }}
                             </h3>
                             <p class="text-gray-600"><strong>Telepon:</strong> {{ $member->phone }}</p>
-                            <p class="text-gray-600"><strong>Tanggal Bergabung:</strong> {{ $member->join_date }}</p>
+                            <p class="text-gray-600"><strong>Tanggal Bergabung:</strong> {{ \Carbon\Carbon::parse($member->join_date)->format('d-m-Y') }}</p>
                             <p class="text-gray-600"><strong>Status:</strong> {{ $member->status }}</p>
                         </div>
                     @endforeach

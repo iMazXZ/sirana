@@ -100,37 +100,43 @@
             </aside>
         </div>
     </div>
-    <section id="hero-section" style="background: linear-gradient(to top, white 0%, #a3a4f4 100%)" class= "py-12" >
-        <div class="container mx-auto px-4">
-            <div class="text-center text-black relative z-10">
-                <h1 class="font-bold text-2xl md:text-4xl mb-4">KARANG TARUNA RW 10</h1>
-                <p class="text-sm md:text-2xl mt-4">
-                    <b>Karang Taruna RW 10</b> resmi terbentuk pada <b>01 Agustus 2022</b> atas inisiatif para pemuda dan pemudi di wilayah tersebut untuk menciptakan organisasi yang menjadi wadah kebersamaan, kreativitas, dan kepedulian sosial. Organisasi ini lahir dari semangat generasi muda RW 10 yang ingin berkontribusi nyata bagi masyarakat melalui berbagai kegiatan positif, seperti aksi sosial, pendidikan, olahraga, seni budaya, dan program pemberdayaan masyarakat untuk meningkatkan kualitas hidup warga.
-                </p>
-                <p class="text-sm md:text-2xl mt-4">
-                    Dengan terbentuknya Karang Taruna RW 10, diharapkan tercipta lingkungan yang harmonis, peduli, dan progresif, sekaligus menginspirasi generasi muda untuk aktif berkontribusi dalam pembangunan masyarakat.
-                </p>
-                <ul class="mt-8">
-                    <li class="inline-block">
-                        <a href="/struktur" class="bg-yellow-500 text-white font-bold py-3 px-6 mt-4 rounded hover:bg-yellow-300 transition-colors duration-300 text-lg">
-                            Struktur Organisasi
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="absolute inset-0 bg-bubbles opacity-50">
-                <ul class="bg-bubbles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+    <section id="hero-section" class="relative w-full overflow-x-hidden py-20 md:py-28" style="background: linear-gradient(to top, white 0%, #a3a4f4 100%)">
+        {{-- Latar belakang animasi. Diposisikan absolut terhadap 'section' --}}
+        <div class="absolute inset-0 z-0 opacity-50" aria-hidden="true">
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        {{-- Konten utama. Diposisikan di atas latar belakang (z-10) --}}
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center text-black">
+                <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl mb-4 break-words">
+                    KARANG TARUNA RW 10
+                </h1>
+                <div class="max-w-4xl mx-auto">
+                    {{-- 'break-words' memastikan teks akan pindah baris dan tidak memaksa container melebar --}}
+                    <p class="text-base md:text-lg mt-6 break-words">
+                        <strong class="font-semibold">Karang Taruna RW 10</strong> resmi terbentuk pada <strong class="font-semibold">01 Agustus 2022</strong> atas inisiatif para pemuda dan pemudi di wilayah tersebut untuk menciptakan organisasi yang menjadi wadah kebersamaan, kreativitas, dan kepedulian sosial. Organisasi ini lahir dari semangat generasi muda RW 10 yang ingin berkontribusi nyata bagi masyarakat melalui berbagai kegiatan positif, seperti aksi sosial, pendidikan, olahraga, seni budaya, dan program pemberdayaan masyarakat untuk meningkatkan kualitas hidup warga.
+                    </p>
+                    <p class="text-base md:text-lg mt-4 break-words">
+                        Dengan terbentuknya Karang Taruna RW 10, diharapkan tercipta lingkungan yang harmonis, peduli, dan progresif, sekaligus menginspirasi generasi muda untuk aktif berkontribusi dalam pembangunan masyarakat.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="/struktur" class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors duration-300 inline-block text-lg">
+                        Struktur Organisasi
+                    </a>
+                </div>
             </div>
         </div>
     </section>
