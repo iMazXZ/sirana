@@ -47,9 +47,9 @@
                             <li class="flex items-center bg-white p-4 rounded shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer" onclick="showModal('{{ $item->title }}', '{{ $item->start_date }}', '{{ ucfirst($item->status) }}', '{{ $item->description }}')">
                                 <i class="fas fa-calendar-alt w-15 h-15 rounded mr-3 text-blue-500"></i>
                                 <div class="flex-1">
-                                    <a href="{{ route('activity.show', ['activity' => $item]) }}" class="text-blue-600 hover:underline font-semibold text-lg">
+                                    <p class="text-gray-900 font-semibold text-lg">
                                         {{ $item->title }}
-                                    </a>
+                                    </p>
                                     <p class="text-gray-500 text-sm">{{ $item->start_date }}</p>
                                 </div>
                                 <span class="
